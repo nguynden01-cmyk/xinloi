@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi cậu đôi lời xin lỗi</title>
+    <!-- Nhúng font chữ Google Fonts tiếng Việt mềm mại -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ebe5dc; /* Màu nền ấm áp bên ngoài thiệp */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Lora', serif;
+            color: #4a4036;
+        }
+
+        .card-container {
+            background-color: #fdfbf7; /* Màu giấy kem của thiệp */
+            max-width: 650px;
+            width: 100%;
+            padding: 45px 50px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(74, 64, 54, 0.12);
+            position: relative;
+            border: 1px solid #e6dfd3;
+        }
+
+        /* Khung viền mảnh trang trí bên trong thiệp */
+        .card-container::before {
+            content: "";
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            right: 14px;
+            bottom: 14px;
+            border: 1px solid #d5c7b2;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .decorative-icon {
+            font-size: 24px;
+            color: #b08d6a;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #3d332a;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 1.5px;
+            background-color: #cbbba0;
+            margin: 15px auto 0;
+        }
+
+        .card-body {
+            font-size: 16.5px;
+            line-height: 1.85;
+            text-align: justify;
+        }
+
+        .salutation {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: #3d332a;
+        }
+
+        .card-body p {
+            margin-bottom: 16px;
+            text-indent: 24px; /* Thụt đầu dòng chuẩn văn bản thư tay */
+        }
+
+        .highlight-reason {
+            background-color: #f4eee4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-style: italic;
+            color: #7a5c3e;
+        }
+
+        .card-footer {
+            margin-top: 32px;
+            text-align: right;
+        }
+
+        .closing-phrase {
+            font-style: italic;
+            color: #6e6052;
+            margin-bottom: 6px;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #3d332a;
+        }
+
+        /* Tối ưu hiển thị trên điện thoại */
+        @media (max-width: 600px) {
+            .card-container {
+                padding: 32px 26px;
+            }
+            .card-header h1 {
+                font-size: 23px;
+            }
+            .card-body {
+                font-size: 15.5px;
+                line-height: 1.75;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <header class="card-header">
+            <span class="decorative-icon">❦</span>
+            <h1>Lời Xin Lỗi Muộn Màng</h1>
+            <div class="divider"></div>
+        </header>
+
+        <main class="card-body">
+            <div class="salutation">Gửi Đỗ Hữu Hậu,</div>
+
+            <p>
+                Viết những dòng này cho cậu, thực sự lòng tớ đang nặng trĩu và áy náy vô cùng. Tớ biết ngày chụp kỷ yếu là một cột mốc cực kỳ quan trọng đối với cả tập thể lớp mình, và đặc biệt là với hai đứa mình. Vậy mà cuối cùng, tớ lại là người lỡ hẹn, không thể đứng cạnh cậu trong những bức hình thanh xuân rực rỡ nhất.
+            </p>
+
+            <p>
+                Tớ xin lỗi cậu rất nhiều. Thật lòng mà nói, tớ cũng mong chờ ngày này từ rất lâu rồi. Tớ đã từng hình dung ra cảnh hai đứa mình mặc đồ cử nhân, mặc áo dài, cùng nhau tạo đủ thứ kiểu dáng bá đạo để lưu giữ lại quãng thời gian đẹp đẽ dưới mái trường này. Nhưng vì <span class="highlight-reason">Tớ bị ốm!</span>, tớ đành phải ngậm ngùi nhìn mọi người lên đồ mà không thể có mặt.
+            </p>
+
+            <p>
+                Cảm giác phải vắng mặt trong một sự kiện chỉ có một lần trong đời học sinh thực sự hụt hẫng lắm. Tớ buồn một, nhưng tớ sợ cậu buồn và thất vọng mười vì đã hẹn trước với nhau mà tớ lại thất hứa. Mong cậu hiểu cho hoàn cảnh của tớ lúc này và đừng giận tớ nhé.
+            </p>
+
+            <p>
+                Dù không thể xuất hiện trong bộ ảnh kỷ yếu của lớp, nhưng quãng thời gian qua được làm bạn với cậu mới là cuốn album kỷ niệm quý giá nhất mà tớ có. Đợi khi nào xong xuôi mọi việc, tớ nhất định sẽ đền bù cho cậu bằng một buổi đi chơi riêng thật hoành tráng để tự tay chụp bù lại cho ngày hôm nay, cậu chịu không?
+            </p>
+
+            <p>
+                Một lần nữa, cho tớ gửi lời xin lỗi chân thành nhất tới cậu. Chúc cậu có những tấm hình kỷ yếu thật xinh đẹp và rạng rỡ nhé!
+            </p>
+        </main>
+
+        <footer class="card-footer">
+            <div class="closing-phrase">Bạn của cậu,</div>
+            <div class="signature">Nguyễn Tiến Hải Đăng</div>
+        </footer>
+    </div>
+
+</body>
+</html>
